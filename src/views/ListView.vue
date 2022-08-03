@@ -11,9 +11,22 @@
     <div class="listDetail_sendTime">Send Time</div>
     <div class="listDetail_createTime">Creation Time</div>
     <div class="listDetail_Creator">Creator</div>
-    <div class="listDetail">Operations</div>
+    <div class="listDetail_Operations">Operations</div>
   </div>
-  <div class="listDetailData"><SingleTableCell /></div>
+  <div class="listDetailDataTable">
+    <div class="SingleTableCellContainer"><SingleTableCell /></div>
+    <div class="SingleTableCellContainer"><SingleTableCell /></div>
+    <div class="SingleTableCellContainer"><SingleTableCell /></div>
+    <div class="SingleTableCellContainer"><SingleTableCell /></div>
+    <div class="SingleTableCellContainer"><SingleTableCell /></div>
+    <div class="SingleTableCellContainer"><SingleTableCell /></div>
+    <div class="SingleTableCellContainer"><SingleTableCell /></div>
+    <div class="SingleTableCellContainer"><SingleTableCell /></div>
+    <div class="SingleTableCellContainer"><SingleTableCell /></div>
+    <div class="SingleTableCellContainer"><SingleTableCell /></div>
+    <div class="SingleTableCellContainer"><SingleTableCell /></div>
+    <div class="SingleTableCellContainer"><SingleTableCell /></div>
+  </div>
 </template>
 
 <script>
@@ -53,22 +66,36 @@ export default {
   margin-right: 80px;
   margin-left: 50px;
 }
-.listDetailData {
+.listDetailDataTable {
   position: absolute;
   left: 280px;
   top: 220px;
-  display: flex;
+  background-color: aliceblue;
+  height: 700px;
+  width: 1600px;
+}
+.SingleTableCellContainer {
+  margin-bottom: 20px;
+  width: 1600px;
 }
 .listDetail_status {
   margin-left: 40px;
 }
 
 .listDetail_sendTime {
-  margin-left: 15px;
+  margin-left: 80px;
 }
-
+.listDetail_createTime {
+  margin-left: 130px;
+}
+.listDetail_Creator {
+  margin-left: 105px;
+}
 .listDetail_type {
   margin-left: 40px;
+}
+.listDetail_Operations {
+  margin-left: 120px;
 }
 </style>
 
