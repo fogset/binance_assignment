@@ -1,9 +1,11 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="leftMenu_Dashboard">
+    <router-link to="/">Dashboard </router-link>
+  </div>
+  <div class="leftMenu_List">
+    <router-link to="/List">List </router-link>
+  </div>
+  <router-view />
 </template>
 
 <style>
@@ -15,16 +17,21 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+.leftMenu_Dashboard {
+  font-size: 30px;
+  position: absolute;
+  left: 50px;
+  top: 300px;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.leftMenu_List {
+  font-size: 30px;
+  position: absolute;
+  left: 50px;
+  top: 400px;
 }
 
-nav a.router-link-exact-active {
+leftMenu a.router-link-exact-active {
   color: #42b983;
 }
 </style>
